@@ -82,11 +82,11 @@ def nl2br_filter(s):
     return escape(s).replace("\n", Markup("<br>"))
 
 def main():
-    application.run("192.168.33.10", 8000)
+    application.run("127.0.0.1", 8000)
 
 
 
 if __name__ == "__main__":
     # ipアドレス0.0.0.0の8000番ポートでアプリケーションを実行します
-    application.run("0.0.0.0", 8000, debug=True)
+    application.run("127.0.0.1", 8000, debug=True)
 
